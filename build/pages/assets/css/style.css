@@ -1,0 +1,85 @@
+body {
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#header {
+  padding: 20px;
+  background-image: linear-gradient(#E64F40, #BE362F);
+  color: white;
+}
+
+#logo {
+  max-width: 30%;
+}
+
+#download-button {
+  background-color: transparent;
+  border-color: white;
+  border-radius: 10px;
+  /* box-shadow: 0 0 3px #313131; */
+  color: white;
+}
+
+#download-icon {
+  padding-right: 5px;
+  position: relative;
+}
+
+hr {
+  background-color: white;
+}
+
+nav {
+  padding-top: 8px;
+  font-weight: bold;
+}
+
+#tagline {
+  padding-top: 20px;
+  color: #333;
+  text-align: center;
+  line-height: 1.8em;
+}
+
+#tagline div i {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#features {
+  /* margin-top: 40px; */
+}
+
+/* .feature-description {
+  padding-left: 40px;
+} */
+
+div#features i {
+  color: #BE362F;
+  font-size: 2em;
+  margin-right: 7px;
+}
+
+footer {
+  padding: 10px;
+}
+
+.w-100 {
+  margin-bottom: 50px;
+}
+
+.nav .nav-item:not(:last-child) {
+  padding-right: 15px;
+}
+
+.beta {
+  position: absolute;
+  left: -10;
+}
+
+div#header a, a:hover {
+  color: white;
+  text-decoration: none;
+  text-decoration-color: none;
+}

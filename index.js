@@ -3,7 +3,10 @@ const http = require('http');
 const port = process.env.PORT || 3000;
  
 const server = http.createServer((request, response) => {
-  return handler(request, response);
+  return handler(request, response, {
+    "public": "build/pages/",
+    "cleanUrls": true,
+  });
 });
  
 server.listen(process.env.PORT || 3000, () => {
