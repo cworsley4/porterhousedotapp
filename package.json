@@ -1,0 +1,23 @@
+{
+  "name": "porterhousedotapp",
+  "version": "1.0.0",
+  "description": "Website for the Porterhouse website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Porterhouse",
+    "messaging",
+    "iMessage",
+    "SMS",
+    "mass",
+    "messaging"
+  ],
+  "author": "Cecil Worsley IV",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^11.0.0"
+  }
+}

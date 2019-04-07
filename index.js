@@ -1,0 +1,11 @@
+const handler = require('serve-handler');
+const http = require('http');
+const port = process.env.PORT || 3000;
+ 
+const server = http.createServer((request, response) => {
+  return handler(request, response);
+});
+ 
+server.listen(process.env.PORT || 3000, () => {
+  console.log(`Running on port: ${port}`);
+});
