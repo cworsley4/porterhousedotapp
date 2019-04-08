@@ -2,7 +2,7 @@ const fs = require('fs');
 const build = require('./build').build;
 const recursive = require("recursive-readdir");
 
-let filesToWatch = ['./home-header.html', './header.html', './footer.html', './ga.js'];
+let filesToWatch = ['./link-tags.html', './header-end.html', './header-start.html', './footer.html', './ga.js'];
 
 build();
 

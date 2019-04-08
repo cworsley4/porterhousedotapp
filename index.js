@@ -6,6 +6,7 @@ const server = http.createServer((request, response) => {
   return handler(request, response, {
     "public": "build/pages/",
     "cleanUrls": true,
+    "directoryListing": process.env.NODE_ENV === 'production' ? false : true,
   });
 });
  
