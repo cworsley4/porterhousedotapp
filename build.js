@@ -2,13 +2,15 @@ const fs = require('fs');
 const ncp = require('ncp');
 const recursive = require("recursive-readdir");
 
-exports.build = function build(done) {
+function build(done) {
   const headerStart = fs.readFileSync('./header-start.html').toString();
   const headerEnd = fs.readFileSync('./header-end.html').toString();
   const footer = fs.readFileSync('./footer.html').toString();
   const links = fs.readFileSync('./link-tags.html').toString();
   const ga = fs.readFileSync('./ga.js').toString();
   const rootURL = process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://porterhouse.app';
+
+  console.log('Building for ' + process.env.NODE_ENV);
 
   // copy assets  
   ncp('./pages/assets', './build/pages/assets', console.log);
@@ -43,3 +45,7 @@ exports.build = function build(done) {
     if (done) done();
   });
 }
+
+build();
+
+exports.build = build;
