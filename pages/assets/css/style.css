@@ -13,6 +13,14 @@ body {
   max-width: 30%;
 }
 
+.header-img {
+  max-width: 75%;
+}
+
+.help-walkthrough-img {
+  width: 65%;
+}
+
 #download-button {
   background-color: transparent;
   border-color: white;
@@ -70,7 +78,7 @@ footer {
 }
 
 .nav .nav-item:not(:last-child) {
-  padding-right: 15px;
+  padding-right: 25px;
 }
 
 .beta {
