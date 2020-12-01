@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "build": "node build.js",
     "deploy": "NODE_ENV=production node build.js && gcloud app deploy --project porterhouse-223106",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
