@@ -1,12 +1,16 @@
 body {
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 #header {
   padding: 20px;
   background-image: linear-gradient(#E64F40, #BE362F);
   color: white;
+}
+
+h2 {
+  font-weight: 800;
 }
 
 #logo {

@@ -20,6 +20,7 @@
   "author": "Cecil Worsley IV",
   "license": "ISC",
   "dependencies": {
+    "iframe-resizer": "^4.2.11",
     "ncp": "^2.0.0",
     "only": "0.0.2",
     "recursive-readdir": "^2.2.2",

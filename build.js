@@ -9,6 +9,7 @@ function build(done) {
   const links = fs.readFileSync('./link-tags.html').toString();
   const ga = fs.readFileSync('./ga.js').toString();
   const rootURL = process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://porterhouse.app';
+  const railsURL = process.env.NODE_ENV === 'development' ? 'http://localhost:9999' : 'https://order.porterhouse.app';
 
   console.log('Building for ' + process.env.NODE_ENV);
 
@@ -38,6 +39,8 @@ function build(done) {
       // embedded replacements
       console.log('Replacing ___ROOT_URL___', rootURL);
       page = page.replace(/___ROOT_URL___/g, rootURL);
+      console.log('Replacing ___RAILS_URL___', railsURL);
+      page = page.replace(/___RAILS_URL___/g, railsURL);
 
       fs.writeFileSync(`./build/${filePath}`, page);
     });
