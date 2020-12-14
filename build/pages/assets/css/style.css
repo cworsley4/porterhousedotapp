@@ -1,10 +1,8 @@
 body {
-  width: 100%;
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-#header {
-  padding: 20px;
+div#header {
   background-image: linear-gradient(#E64F40, #BE362F);
   color: white;
 }
@@ -13,8 +11,32 @@ h2 {
   font-weight: 800;
 }
 
-#logo {
-  max-width: 30%;
+h1 {
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 969px) {
+  #logo {
+    align-self: flex-start;
+    max-width: 50%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 970px) {
+  #logo {
+    align-self: flex-start;
+    max-width: 75%;
+    height: auto;
+  }
+  .use-case {
+    text-align: justify;
+  }
+}
+
+.use-case {
+  color: rgb(74,85,104);
+  line-height: 1.7em;
+  font-size: large;
 }
 
 .header-img {
@@ -26,10 +48,9 @@ h2 {
 }
 
 #download-button {
-  background-color: transparent;
+  background-color: black;
   border-color: white;
   border-radius: 10px;
-  /* box-shadow: 0 0 3px #313131; */
   color: white;
 }
 
@@ -42,15 +63,15 @@ hr {
   background-color: white;
 }
 
-nav {
+nav#header {
+  color: white;
   padding-top: 8px;
   font-weight: bold;
+  background-color: #E64F40 !important;
 }
 
-#tagline {
+#tagline p i {
   padding-top: 20px;
-  color: #333;
-  text-align: center;
   line-height: 1.8em;
 }
 
@@ -59,18 +80,13 @@ nav {
   padding-bottom: 20px;
 }
 
-#features {
-  /* margin-top: 40px; */
+#features h4 {
+  margin-bottom: 0.2rem;
 }
-
-/* .feature-description {
-  padding-left: 40px;
-} */
 
 div#features i {
   color: #BE362F;
   font-size: 2em;
-  margin-right: 7px;
 }
 
 footer {
@@ -90,8 +106,12 @@ footer {
   left: -10;
 }
 
-div#header a, a:hover {
+nav#header a, nav#header a:hover {
   color: white;
   text-decoration: none;
   text-decoration-color: none;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }

@@ -10,15 +10,19 @@
   }
 </script>
 	<meta name="robots" content="index,follow" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
   integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://porterhouse.app/assets/css/style.css" />
 <link rel="icon" type="image/png" href="https://porterhouse.app/assets/favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="https://porterhouse.app/assets/favicon-16x16.png" sizes="16x16" />
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://porterhouse.app/assets/css/style.css" />
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <style>
   #header-img {
@@ -38,36 +42,37 @@
 </head>
 
 <body class="">
-	<div class="row" id="header">
-    <div class="elfsight-app-531ddaf6-8064-4ac6-89b5-0dee2322cf95"></div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <a href="https://porterhouse.app">
-            <h2>Porterhouse</h2>
-          </a>
-        </div>
-        <div class="col">
-          <nav class="nav justify-content-end">
-            <ul class="nav align-middle">
-              <li class="nav-item"><a href="https://porterhouse.app/use-cases">Use Cases</a></li>
-              <li class="nav-item"><a href="https://porterhouse.app/security">Security</a></li>
-              <li class="nav-item"><a href="https://porterhouse.app/updates">Updates</a></li>
-              <li class="nav-item">
-                <a href="https://porterhouse.app/help">Help</a>
-              </li>
-              <li class="nav-item"><a target="_blank" href="https://twitter.com/Porterhouseapp">Twitter</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+	<div class="elfsight-app-531ddaf6-8064-4ac6-89b5-0dee2322cf95"></div>
+<nav id="header" class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="/"><h2>Porterhouse</h2></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/use-cases">Use Cases</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/security">Privacy & Security</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/help">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="https://twitter.com/Porterhouseapp"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="full-width mb-3" id="header">
+  <div class="container py-md-5 py-2">
 
 	</div>
 </div>
-	<div id="features" class="container">
-    <br/>
-		<div class="row">
-    </div>
 	</div>
       <iframe id="railsIframe" src="https://order.porterhouse.app/pricing?embed=true" frameborder="0" scrolling="no" style="width:100%;">Oops, something went wrong! Please contact support@porterhouse.app for help.</iframe>
       <script>
@@ -79,16 +84,15 @@
 	<hr />
 <footer class="footer">
   <div class="row">
-    <div class="col">
+    <div class="col-md-2">
       <small>© 2020 cdot4, LLC</small>
     </div>
-    <div class="col">
-      <div class="row justify-content-end">
-        <a target="_blank" href="https://twitter.com/Porterhouseapp">
-          <small>Follow Porterhouse on Twitter</small>
-          <i class="fab fa-twitter"></i>
-        </a>
-      </div>
+    <div class="col"></div>
+    <div class="col-md-3">
+      <a target="_blank" href="https://twitter.com/Porterhouseapp">
+        <small>Follow Porterhouse on Twitter</small>
+        <i class="fab fa-twitter"></i>
+      </a>
     </div>
   </div>
 </footer>
