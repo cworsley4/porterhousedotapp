@@ -70,9 +70,15 @@ nav#header {
   background-color: #E64F40 !important;
 }
 
-#tagline p i {
+#tagline p {
+  font-size: larger;
+  font-weight: 200;
   padding-top: 20px;
-  line-height: 1.8em;
+  line-height: 2rem;
+}
+
+#tagline p strong {
+  font-weight: 600;
 }
 
 #tagline div i {
