@@ -12,76 +12,78 @@
 
 <body>
 	___HEADER_START___
-	<div class="row">
-
-		<div class="col-md-1"></div>
-		<div class="col-md-4">
+	<div id="hero-start" class="row">
+		<div class="col-md-6">
 			<div class="row">
-				<div class="col d-flex justify-content-center justify-content-md-end">
-					<img id="logo" class="img-fluid" alt="Porterhouse Logo" src="./assets/logo.png" />
+				<div class="col d-flex justify-content-center">
+					<div id="vid" class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/zw4vQpkJh80?wmode=opaque&start=166" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col d-flex justify-content-center">
+					<p style="width:448px; line-height:0.75rem; font-size:small; opacity:0.9; background-color:rgba(0,0,0,0.5); border-radius:0 0 7px 7px" class="p-1 text-center"><small>Older version shown in video. Current version has updated look and built-in CSV uploading.</small></p>
 				</div>
 			</div>
 		</div>
 
-		<div class="col-md-6 d-flex align-items-center">
+		<div class="col-md-6 pt-4 pt-md-0">
 			<h5 id="tagline" class="text-left">
-				<p>Automate individualized mass iMessage and SMS messaging from <strong>your own phone number</strong>, right
-						on
-						your computer.</p>
-				<p>Each message is sent individually to each recipient to personalize your text
-						based marketing!</p>
+				<p class="main">Unlimited mass texts with <u>one click</u></p>
+				<p class="sub">Porterhouse automates your iPhone to send individual, personalized texts to your list with a single
+					click.</p>
 			</h5>
+		
+			<div class="mb-3">Available for the <i class="fab fa-apple"></i> Mac</div>
+			<a href="___RAILS_URL___/signup">
+				<button id="download-button" class="btn btn-lg px-4 py-2 rounded-lg">
+					Try now for free
+				</button>
+			</a>
 		</div>
-		<div class="col-md-1"></div>
-
 	</div>
 
-	<div class="row pt-3 pt-md-5">
+	<div class="row md-5">
 		<div class="col">
-			<div class="row">
-				<div class="col-md-3"></div>
-				<div class="col-md-3 pb-2 d-flex justify-content-center justify-content-md-end">
+			<div class="row" id="hero-end">
+				<div class="col-md-6 pb-2 pt-5 pt-md-0 d-flex justify-content-center">
 					<a href="https://www.producthunt.com/posts/porterhouse?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-porterhouse"
 						target="_blank"><img
 							src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=150689&theme=light"
 							alt="Porterhouse - Mass personalized iMessage and SMS messaging! | Product Hunt Embed"
-							style="width: 250px; height: 54px;" width="250px" height="54px" />
+							width="200px" height="43px" />
 					</a>
 				</div>
-				<div class="col-md-3 pb-3 d-flex justify-content-center justify-content-md-start">
+				<!-- <div class="col-md-3 pb-3 d-flex justify-content-center justify-content-md-start">
 					<a href="https://www.producthunt.com/posts/porterhouse?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-porterhouse"
 						target="_blank"><img
 							src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=150689&theme=light&period=daily"
 							alt="Porterhouse - Mass personalized iMessage and SMS messaging! | Product Hunt Embed"
-							style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
-				</div>
-				<div class="col-md-3"></div>
-			</div>
-			<div class="row pb-3">
-				<div class="col d-flex justify-content-center">
-					<a target="_blank" href="/download">
-						<button id="download-button" class="btn btn-lg">
-							<i id="download-icon" class="h3 fa fa-download"></i>
-							<span class="h3">
-								Download 1.2.2
-							</span>
-							<div>
-								<small>for macOS 10.15+</small>
-							</div>
-						</button>
-					</a>
-				</div>
+							width="200px" height="43px" /></a>
+				</div> -->
+				<div class="col-md-6"></div>
 			</div>
 		</div>
 	</div>
-  ___HEADER_END___
+	___HEADER_END___
 
-	<div class="container pt-3">
+	<div class="container-fluid mb-5">
+		<div class="row bg-warning mt-n3 pb-1 pt-3">
+			<div class="col">
+				<h4 class="font-weight-light text-center text-dark">
+					For a limited time only! &nbsp;<br class="d-md-none"/><a class="text-dark" href="#onboarding"><u>Schedule a FREE onboarding session</u></a>
+				</h4>
+			</div>
+		</div>
+	</div>
+
+	<div class="container py-5">
 		<div id="features">
 			<div class="row">
 				<div class="col">
 					<h2>Features</h2>
-					<small class="text-muted">What this baby can do</small>
+					<p class="text-muted">...and we're constantly adding more!</p>
 				</div>
 			</div>
 			<br />
@@ -97,8 +99,12 @@
 								</div>
 							</div>
 							<div class="col feature-description">
-								<h4>Mass iMessaging</h4>
-								<p>Send blue bubbles to any one in your iPhone's Contacts. BLUE BUBBLES!</p>
+								<h4>Bulk Peer-to-peer iMessage</h4>
+								<p>Send iMessages individually to each recipient.
+									Market-leading engagement with authentic iMessage<br/>
+									<span class="blue-bubble text-white">&nbsp;&nbsp;blue chat bubbles&nbsp;&nbsp;</span>!
+									Regular SMSes are automatically sent to Android recipients.
+								</p>
 							</div>
 						</div>
 					</div>
@@ -108,13 +114,13 @@
 							<div class="col-2">
 								<div class="row">
 									<div class="col d-flex justify-content-center">
-										<i class="fa fa-sms"></i>
+										<i class="fas fa-infinity"></i>
 									</div>
 								</div>
 							</div>
 							<div class="col feature-description">
-								<h4>Mass SMS</h4>
-								<p>Porterhouse also supports individualized SMS messaging to people with those silly green bubbles.</p>
+								<h4>Unlimited texting</h4>
+								<p>No per-text charge! Since your phone does the texting, the unlimited texting plan that comes with your cellular provider is used.</p>
 							</div>
 						</div>
 					</div>
@@ -124,13 +130,13 @@
 							<div class="col-2">
 								<div class="row">
 									<div class="col d-flex justify-content-center">
-										<i class="fa fa-code"></i>
+										<i class="fas fa-mouse-pointer"></i>
 									</div>
 								</div>
 							</div>
 							<div class="col feature-description">
-								<h4>Personalized Merge Tags</h4>
-								<p>Add merge tags such as {{firstName}} to your messages so each recipient gets a personalized text</p>
+								<h4>One-click sending*</h4>
+								<p>Send out your entire broadcast with a single click – reclaim your productivity!</p>
 							</div>
 						</div>
 					</div>
@@ -142,15 +148,13 @@
 							<div class="col-2">
 								<div class="row">
 									<div class="col d-flex justify-content-center">
-										<i class="fa fa-address-book"></i>
+										<i class="fas fa-file-csv"></i>
 									</div>
 								</div>
 							</div>
 							<div class="col feature-description">
-								<h4>iCloud Contacts</h4>
-								<p>With your permission, Porterhouse integrates your iCloud Contacts that sync across your devices.
-									Also, we
-									show your Contacts groups to keep you organized.</p>
+								<h4>CSV Uploads*</h4>
+								<p>Easily upload CSV files containing phone numbers to text. Export phone-number lists from Mailchimp, Salesforce or anywhere and text them all with one-click!</p>
 							</div>
 						</div>
 					</div>
@@ -185,28 +189,94 @@
 							</div>
 							<div class="col feature-description">
 								<h4>Files with Analytics</h4>
-								<p>Porterhouse attaches your files with an individualized link to each recipient allowing you to see who
+								<p>Attach files with an individualized link to each recipient allowing you to see who
 									engages with your files and attachments.</p>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col">
+						<p class="text-muted">* Requires Main Course Plan</p>
+					</div>
+				</div>
 			</div>
-			<hr />
-			<div class="row">
-				<h2 class="col">Screenshots</h2>
+		</div>
+		</div>
+
+			<div class="container-fluid red-bg pb-5">
+				<div class="container pb-5">
+					<div class="row mt-5 pt-5">
+						<div class="col pb-5">
+							<h2 class="pt-5 mb-3 mb-md-5 text-white">Screenshots</h2>
+							<div id="screenshot-carousel-indicators" class="carousel slide" data-ride="carousel" data-interval="7000">
+								<ol class="carousel-indicators">
+									<li data-target="#screenshot-carousel-indicators" data-slide-to="0" class="active"></li>
+									<li data-target="#screenshot-carousel-indicators" data-slide-to="1"></li>
+									<li data-target="#screenshot-carousel-indicators" data-slide-to="2"></li>
+									<li data-target="#screenshot-carousel-indicators" data-slide-to="3"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="./assets/send-modal-screenshot.png" alt="First slide">
+										<div class="carousel-caption d-none d-md-flex justify-content-center">
+											<div>
+												<p class="mx-auto px-5 py-1">&nbsp;&nbsp;&nbsp;&nbsp;See all recipients and send with a single
+													click&nbsp;&nbsp;&nbsp;&nbsp;</p>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./assets/edit-modal-screenshot.png" alt="Second slide">
+										<div class="carousel-caption d-none d-md-flex justify-content-center">
+											<div>
+												<p class="mx-auto px-5 py-1">Setup your broadcast and test it out all from a single screen. Emojis
+													supported! 🎉</p>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./assets/messages-list-screenshot.png" alt="Third slide">
+										<div class="carousel-caption d-none d-md-flex justify-content-center">
+											<div>
+												<p class="mx-auto px-5 py-1">Easily view and access all your broadcasts at a glance</p>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="./assets/analytics-screenshot.png" alt="First slide">
+										<div class="carousel-caption d-none d-md-flex justify-content-center">
+											<div>
+												<p class="mx-auto px-5 py-1">View who clicked on your attachments, and when they did so</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#screenshot-carousel-indicators" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#screenshot-carousel-indicators" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="row mb-4">
-				<small class="col text-muted">Everybody loves screenshots</small>
-			</div>
-			<div>
-				<img alt="Screenshot of all messages" class="img-fluid" src="./assets/screenshot6.png" />
-			</div>
-			<div>
-				<img alt="Screenshot of creating a new message" class="img-fluid" src="./assets/screenshot1.png" />
-			</div>
-			<div>
-				<img alt="Screenshot of sending a new message" class="img-fluid" src="./assets/screenshot3.png" />
+
+		<div class="container">
+			<a id="onboarding"></a>
+			<div class="row pt-5">
+				<div class="col pt-5">
+					<h2 class="">Schedule a free 30-minute onboarding session</h2>
+					<p class="text-muted">We'll make sure you're setup and ready to take advantage of all the ways Porterhouse can help achieve your goals!</p>
+					<!-- Calendly inline widget begin -->
+					<div class="calendly-inline-widget mt-md-n5" data-url="https://calendly.com/porterhouse/onboarding?hide_gdpr_banner=1" style="min-width:320px;height:1000px"></div>
+					<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+					<!-- Calendly inline widget end -->
+				</div>
 			</div>
 		</div>
 		___FOOTER___
