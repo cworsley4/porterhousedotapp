@@ -8,7 +8,8 @@ function build(done) {
   const footer = fs.readFileSync('./footer.html').toString();
   const links = fs.readFileSync('./link-tags.html').toString();
   const ga = fs.readFileSync('./ga.js').toString();
-  const rootURL = process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://porterhouse.app';
+  const port = process.env.PORT || 3000;
+  const rootURL = process.env.NODE_ENV === 'development' ? `http://localhost:${port}` : 'https://porterhouse.app';
   const railsURL = process.env.NODE_ENV === 'development' ? 'http://localhost:9999' : 'https://order.porterhouse.app';
 
   console.log('Building for ' + process.env.NODE_ENV);
