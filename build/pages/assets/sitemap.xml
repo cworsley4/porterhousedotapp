@@ -5,43 +5,24 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://porterhouse.app/</loc>
-  <lastmod>2019-04-18T14:02:05+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://porterhouse.app/use-cases</loc>
-  <lastmod>2019-04-18T14:06:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://porterhouse.app/security</loc>
-  <lastmod>2019-04-18T14:02:08+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://porterhouse.app/updates</loc>
-  <lastmod>2019-04-18T14:06:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://porterhouse.app/help</loc>
-  <lastmod>2019-04-18T14:06:20+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://porterhouse.app/help/enable-accessibility-permissions</loc>
-  <lastmod>2019-04-18T14:06:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://porterhouse.app/help/enable-automation-permissions</loc>
-  <lastmod>2019-04-18T14:06:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
+  <url>
+    <loc>https://porterhouse.app/</loc>
+    <lastmod>2021-04-12T19:02:05+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://porterhouse.app/use-cases</loc>
+    <lastmod>2021-04-12T19:06:20+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://porterhouse.app/security</loc>
+    <lastmod>2021-04-12T19:02:08+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://porterhouse.app/pricing</loc>
+    <lastmod>2021-01-12T19:00:01+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 </urlset>
