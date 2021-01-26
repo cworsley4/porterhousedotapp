@@ -1,8 +1,8 @@
 const handler = require('serve-handler');
 const http = require('http');
 const port = process.env.PORT || 3000;
-const download_url = "https://github.com/cworsley4/Porterhouse-releases/releases/download/v2.0.3/Porterhouse-2.0.3.dmg";
- 
+const download_url = "https://github.com/cworsley4/Porterhouse-releases/releases/download/v2.0.4/Porterhouse-2.0.4.dmg";
+
 const server = http.createServer((request, response) => {
   return handler(request, response, {
     "public": "build/pages/",
