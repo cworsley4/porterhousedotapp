@@ -12,7 +12,7 @@ app.get('/download', (req, res) => {
   res.redirect(download_url);
 });
 
-app.use('/blog', proxy('porterhouse.swish.ink', {
+app.use('/blog', proxy('wb-suan.ngrok.io', {
   userResHeaderDecorator(headers, userReq, userRes, proxyReq, proxyRes) {
     return {
       ...headers,
