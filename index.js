@@ -12,13 +12,13 @@ app.get('/download', (req, res) => {
   res.redirect(download_url);
 });
 
-app.use('/blog', proxy('wb-suan.ngrok.io', {
+app.use('/blog', proxy('porterhouse.swish.ink', {
   userResHeaderDecorator(headers, userReq, userRes, proxyReq, proxyRes) {
     return {
       ...headers,
-      'X-Forwarded-For': userReq.ip,
+      'X-Forwarded-For': userReq.headers['x-appengine-user-ip'],
       'X-Forwarded-Proto': userReq.protocol,
-      'X-Real-IP': userReq.ip,
+      'X-Real-IP': userReq.headers['x-appengine-user-ip'],
       'Host': userReq.headers.host,
     };
   },
