@@ -1,5 +1,5 @@
 const express = require('express');
-var proxy = require('express-http-proxy');
+const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 const port = process.env.PORT || 3000;
 const download_url = "https://github.com/cworsley4/Porterhouse-releases/releases/download/v2.0.14/Porterhouse-2.0.14.dmg";
@@ -12,16 +12,13 @@ app.get('/download', (req, res) => {
   res.redirect(download_url);
 });
 
-app.use('/blog', proxy('porterhouse.swish.ink', {
-  userResHeaderDecorator(headers, userReq, userRes, proxyReq, proxyRes) {
-    return {
-      ...headers,
-      'X-Forwarded-For': userReq.headers['x-appengine-user-ip'],
-      'X-Forwarded-Proto': userReq.protocol,
-      'X-Real-IP': userReq.headers['x-appengine-user-ip'],
-      'Host': userReq.headers.host,
-    };
-  },
-}));
+const swishProxy = createProxyMiddleware({
+  target: 'http://cn.swish.ink',
+  headers: {host: 'porterhouse.app'},
+  xfwd: true,
+  followRedirects: true,
+});
+
+app.use('/blog', swishProxy);
 
 app.listen(port, () => console.log(`listening on port ${port}!`));

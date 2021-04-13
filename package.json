@@ -25,6 +25,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-http-proxy": "^1.6.2",
+    "http-proxy-middleware": "^1.1.1",
     "iframe-resizer": "^4.2.11",
     "ncp": "^2.0.0",
     "only": "0.0.2",
