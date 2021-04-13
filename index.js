@@ -16,9 +16,9 @@ app.use('/blog', proxy('porterhouse.swish.ink', {
   userResHeaderDecorator(headers, userReq, userRes, proxyReq, proxyRes) {
     return {
       ...headers,
-      'X-Forwarded-For': userReq.socket.remoteAddress,
+      'X-Forwarded-For': userReq.ip,
       'X-Forwarded-Proto': userReq.protocol,
-      'X-Real-IP': userReq.socket.remoteAddress,
+      'X-Real-IP': userReq.ip,
       'Host': userReq.headers.host,
     };
   },
