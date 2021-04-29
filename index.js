@@ -2,7 +2,7 @@ const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 const port = process.env.PORT || 3000;
-const download_url = "https://github.com/cworsley4/Porterhouse-releases/releases/download/v2.0.14/Porterhouse-2.0.14.dmg";
+const download_url = "https://github.com/cworsley4/Porterhouse-releases/releases/download/v2.0.16/Porterhouse-2.0.16.dmg";
 
 app.use(express.static('build/pages',{
   extensions: ['html', 'htm'],
