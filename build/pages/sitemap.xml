@@ -5,24 +5,43 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-  <url>
-    <loc>https://porterhouse.app/</loc>
-    <lastmod>2021-04-12T19:02:05+00:00</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://porterhouse.app/use-cases</loc>
-    <lastmod>2021-04-12T19:06:20+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://porterhouse.app/security</loc>
-    <lastmod>2021-04-12T19:02:08+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>http://porterhouse.app/pricing</loc>
-    <lastmod>2021-01-12T19:00:01+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
+
+
+<url>
+  <loc>https://porterhouse.app/</loc>
+  <lastmod>1980-01-01T00:00:01+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://porterhouse.app/blog</loc>
+  <lastmod>2021-07-13T20:41:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://porterhouse.app/security</loc>
+  <lastmod>1980-01-01T00:00:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://porterhouse.app/use-cases</loc>
+  <lastmod>1980-01-01T00:00:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://porterhouse.app/pricing</loc>
+  <lastmod>1980-01-01T00:00:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://porterhouse.app/blog/posts/how-to-avoid-getting-spam-blocked</loc>
+  <lastmod>2021-07-13T20:41:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://porterhouse.app/blog/tags/Help</loc>
+  <lastmod>2021-07-13T20:41:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
