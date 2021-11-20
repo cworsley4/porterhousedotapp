@@ -2,8 +2,8 @@ const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 const port = process.env.PORT || 3000;
-// const download_url = "https://github.com/cworsley4/Porterhouse-releases/releases/download/v2.1.3/Porterhouse-2.1.3.dmg";
-const download_url = "https://storage.googleapis.com/public-builds/Porterhouse-2.1.5.dmg";
+const download_url = "https://github.com/cworsley4/Porterhouse-releases/releases/download/v2.1.7/Porterhouse-2.1.7.dmg";
+// const download_url = "https://storage.googleapis.com/public-builds/Porterhouse-2.1.5.dmg";
 
 app.use(express.static('build/pages',{
   extensions: ['html', 'htm'],
